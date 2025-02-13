@@ -9,7 +9,7 @@ import { Job } from "@/types/type";
 import EmptyState from "@/components/EmptyState";
 import ErrorState from "@/components/ErrorState";
 
-const HomeScreen = () => {
+const JobsScreen = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -100,4 +100,4 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default JobsScreen;

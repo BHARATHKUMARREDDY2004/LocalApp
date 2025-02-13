@@ -1,50 +1,54 @@
-# Welcome to your Expo app 👋
+# Lokal App
+[▶ Watch Here](https://drive.google.com/file/d/1AXSKNvSpYDpV9FQJMpiiCgx8MShBt9UZ/view?usp=drivesdk)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a React Native application built with Expo, Tailwind CSS, and Zustand for state management. The app allows users to browse job listings, bookmark jobs, and view saved jobs offline.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Bottom Navigation**: Two sections - Jobs and Bookmarks.
+- **Infinite Scroll**: Fetches job data from the API dynamically.
+- **Job Details Screen**: Displays job title, location, salary, contact details and other information.
+- **Bookmarking**: Allows users to save jobs for offline viewing.
+- **State Management**: Uses Zustand to handle global states.
+- **Offline Storage**: Saves bookmarked jobs for later access.
+- **Error & Loading States**: Provides feedback for different app states.
 
-   ```bash
+## 🛠️ Tech Stack
+
+- **React Native** (with Expo)
+- **Tailwind CSS** (for styling)
+- **Zustand** (for state management)
+- **AsyncStorage** (for offline bookmarks)
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/react-native-jobs-app.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd react-native-jobs-app
+   ```
+3. Install dependencies:
+   ```sh
    npm install
    ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
+4. Start the development server:
+   ```sh
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## 🔗 API Used
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- The app fetches job data from:
+  ```
+  https://testapi.getlokalapp.com/common/jobs?page=1
+  ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📜 Usage
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Open the app to see job listings.
+- Tap on a job card to view more details.
+- Bookmark jobs to save them for offline access.
+- Switch to the **Bookmarks** tab to see saved jobs.
